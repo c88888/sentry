@@ -10,7 +10,7 @@ const DATE_TIME_FORMAT = 'YYYY-MM-DDTHH:mm:ss';
 const DEFAULTS = {
   projects: [],
   fields: ['event_id', 'timestamp'],
-  conditions: [],
+  conditions: [['message', 'LIKE', '%message']],
   aggregations: [],
   start: moment()
     .subtract(14, 'days')
